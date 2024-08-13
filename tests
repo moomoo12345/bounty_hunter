@@ -1,0 +1,19 @@
+
+### Step 5: Add Unit Tests
+
+Create unit tests in the `tests/` directory to ensure your tool works as expected. Example:
+
+#### `tests/test_scanner.py`
+```python
+import unittest
+from bounty_hunter.scanner import Scanner
+
+class TestScanner(unittest.TestCase):
+    def test_scanner_initialization(self):
+        scanner = Scanner(["example.com"])
+        self.assertIsInstance(scanner, Scanner)
+
+    # Add more tests for different functionalities
+
+if __name__ == '__main__':
+    unittest.main()
